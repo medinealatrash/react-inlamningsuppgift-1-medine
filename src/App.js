@@ -93,7 +93,7 @@ reloladHandler=()=>{
         <h3 id="idH3Computer">Computer :</h3>
         <div className="computer">
         {this.state.computer.map((computerNum)=>{
-            return <Computer idC={++idComputer} key={'id' +idComputer} takeNumber={computerNum} />
+            return <Computer idC={++idComputer} key={'id' + +idComputer} takeNumber={computerNum} />
           }) }
         </div>
         <Score usersScore={userScore} computersScore={computerScore} />
