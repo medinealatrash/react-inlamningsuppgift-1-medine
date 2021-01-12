@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+
+.user, .computer{
+height: 6rem;
+width: 17rem;
+display: flex;
+padding: .5rem;
+justify-content: space-around;
+}
+h3{
+  display: block;
+  font-family: 'Marck Script', cursive;
+  font-size: 1.5rem;
+}
+h2{
+  height: 3rem;
+  width: 3rem;
+  padding: .5rem;
+  font-size: 2rem;
+  text-align: center;
+  border: solid;
+  border-color: black;
+  display: inline;
+  box-shadow: 5px -5px 0px rgba(2, 2, 2, 0.815);
+  border-radius: 4px;
+  background-color: rgb(228, 228, 226);
+ 
+  font-family: 'Cabin Sketch', cursive;
+ 
+}
+h1{
+ 
+ font-family: 'Cabin Sketch', cursive;
+  width: 100%;
+  padding: .5rem;
+  font-size: 4rem;
+  text-align: center;
+  
+}
+p{
+  font-family: 'Chewy', cursive;
+}
+.btn{
+  height: 2rem;
+  width: 10rem;
+  display: flex;
+  justify-content: space-around;
+}
+button{
+  cursor: pointer;
+  background-color: rgb(5, 5, 167);
+  color: rgb(247, 240, 240);
+  border-radius: 5px;
+  font-weight:bold;
+  
+}
+#idH3Computer, #idH3User{
+  display: none;
+}
+#id2{
+  visibility: hidden;
+  animation:  diceAnimation forwards;
+  animation-delay: 1s;
+}
+#id3{
+  visibility: hidden;
+  animation:  diceAnimation forwards;
+  animation-delay: 2s;
+}
+#id4{
+  visibility: hidden;
+  animation:  diceAnimation forwards;
+  animation-delay: 3s;
+}
+.score{
+  visibility: hidden; 
+ 
+  animation:  diceAnimation forwards;
+  animation-delay: 4s;
+}
+.winner{
+  text-align: center;
+  visibility: hidden;
+  animation:  diceAnimation forwards;
+  animation-delay: 5s;
+}
+@keyframes diceAnimation {
+from {visibility: hidden;}
+to {visibility: visible;}
+}
+
